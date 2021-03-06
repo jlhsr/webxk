@@ -1,1 +1,20 @@
 
+html{
+background-image:url(https://api.uomg.com/api/rand.img2?sort=%e4%ba%8c%e6%ac%a1%e5%85%83);
+background-position:0 0;
+background-attachment:fixed;
+background-size:100%;
+}
+
+.block-vip1:before{
+ background-position:-928px -3616px;
+}
+.block-vip2:before{
+ background-position:-896px -3616px;
+}
+.block-vip3:before{
+ background-position:-832px -3616px;
+}
+.block-vip4:before{
+  background-position:-864px -3616px;
+}
