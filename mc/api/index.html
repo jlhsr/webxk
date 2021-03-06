@@ -48,7 +48,7 @@
 	fun();
 setInterval(fun,3000);
 function fun(){
- $.ajax({url:"./api/getServerState.php",success:function(res){
+ $.ajax({url:"./getServerState.php",success:function(res){
       var data = JSON.parse(res);
 	  var play = data.players;
 	  var cpu = data.cpu;
