@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta name="referrer" content="unsafe-url">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content>
+    <meta name="author" content>
+    <link href="css/min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+<meta content="always" name="unsafe-url">
+  </head>
+  <body>
+	<div class="dialog2" style="position:fixed;width:100%;height:100%;">
+	  <div class="dialog-title">状态</div>
+	  <div class="dialog-body">
+ <div class="row">
+		<div class="col-xs-12 text-center" id="free">loading...</div>
+		<div class="progress">
+		  <div class="progress-bar"></div>
+		  <div style class="progress-value" id="free2"></div>
+	  </div>
+	</div>
+	<br>
+			<div class="row row-align-center">
+		  <div class="col-xs-4"> <div class=" btn btn-default">在线数量</div></div>
+		  <div class="col-xs-8 "><div class="form-text" id="player">loading...</div></div>
+		</div>
+		<br>
+	 
+	玩家列表:
+	<div class="text-box" id="list">
+	  loading...
+	</div>
+	<br>
+
+	</div>
+	<div class="dialog-footer">
+		<a class="btn btn-default" href="minecraft://?addExternalServer=§a虚§b空§c之§d遗§6服务器|mc.xkshadow.top:11011" target="view_window">点此一键进服</a>
+	</div>
+	</div>
+  </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/min.js"></script>
+  <script>
+	fun();
+setInterval(fun,3000);
+function fun(){
+ $.ajax({url:"./api/getServerState.php",success:function(res){
+      var data = JSON.parse(res);
+	  var play = data.players;
+	  var cpu = data.cpu;
+	  var free = data.free;
+	  var list = data.list;
+	  var len = data.list.length;
+	  var listbox = $("#list");
+	  listbox.html("");
+	  for(var i = 0;i<len;i++){
+	  listbox.append($("<div>"+ list[i]+"</div>"));
+	  }
+	 $("#cpu").html(cpu+"%");
+	 $("#cpu2").css("width",cpu+"%");
+	 $("#player").html(play);
+	 $("#free").html(free+"%");
+	 $("#free2").css("width",free+"%");
+    }});
+	}
+  </script>
+</html>		
 
