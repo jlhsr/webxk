@@ -48,7 +48,7 @@
 	fun();
 setInterval(fun,3000);
 function fun(){
- $.ajax({url:"http://w.xkshadow.top/mc/api/getServerState.php",success:function(res){
+ $.ajax({url:"http://w.xkshadow.top:66/mc/api/getServerState.php",success:function(res){
       var data = JSON.parse(res);
 	  var play = data.players;
 	  var cpu = data.cpu;
