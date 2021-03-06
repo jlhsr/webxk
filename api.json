@@ -1,0 +1,68 @@
+{
+  "version": "0.2.0",
+  "titleannounce": "公告",
+  "announce": "春节快乐！\n目前最新版本:0.2.0",
+  "pupdatetime":"2021年2月6日",
+  "resolve_name": [
+  { "text": "wocao (几乎万能)", "value": "0" },
+  { "text": "步步高解析 (支持B站)", "value": "1" },
+  { "text": "M1917 (支持B站)", "value": "2" },
+  {"text": "618G", "value": "3" },
+  { "text": "玩的嗨", "value": "4" },
+  { "text": "cuanla (支持B站)", "value": "5" },
+  { "text": "我爱解析 (支持B站)", "value": "6" },
+  { "text": "黑云", "value": "7" },
+  { "text": "福星", "value": "8" },
+  {"text": "H8", "value": "9" },
+  { "text": "豪华啦", "value": "10" },
+  { "text": "百域", "value": "11" },
+  { "text": "大幕", "value": "12" },
+  { "text": "跟剧", "value": "13" }
+  ],
+  "resolve_url": [
+    "https://www.wocao.xyz/index.php?url=",
+    "https://jx.xihujx.com/index.php?url=",
+    "https://z1.m1907.cn/?jx=",
+    "http://jx.618g.com/?url=",
+    "http://vip.wandhi.com/?v=",
+    "https://www.cuan.la/m3u8.php?url=",
+    "http://vip.52jiexi.top/analysis.php?v=",
+    "https://jiexi.380k.com/?url=",
+    "https://www.h8jx.com/jiexi.php?url=",
+    "https://jx.popo520.cn/jiexi/?url=",
+    "https://api.lhh.la/vip/?url=",
+    "https://jx.618g.com/?url=",
+    "https://jx.52damu.com/dmjx/jiexi.php?url=",
+    "https://www.5igen.com/dmplayer/player/?url="
+  ],
+  "video_site": [
+    { "text": "腾讯视频", "value": "0" },
+    { "text": "爱奇艺(有BUG)", "value": "1" },
+    { "text": "优酷", "value": "2" },
+    { "text": "芒果TV", "value": "3" },
+    { "text": "BiliBili", "value": "4" },
+    { "text": "PPTV", "value": "5" },
+    { "text": "搜狐视频", "value": "6" }
+  ],
+  "video_url": [
+    "https://v.qq.com",
+    "https://www.iqiyi.com",
+    "https://www.youku.com",
+    "https://www.mgtv.com",
+    "https://www.bilibili.com",
+    "https://www.pptv.com",
+    "https://tv.sohu.com"
+  ],
+  "music_site": [
+    { "text": "MYFREEMP3 (推荐)", "value": "0" },
+    { "text": "ihanmu", "value": "1" },
+    { "text": "刘志进实验室", "value": "2" },
+    { "text": "全民影视vip", "value": "3" }
+  ],
+  "music_url": [
+    "http://tool.liumingye.cn/music/",
+    "http://music.ihanmu.com/",
+    "https://music.liuzhijin.cn/",
+    "https://daga.cc/yue/"
+  ]
+}
